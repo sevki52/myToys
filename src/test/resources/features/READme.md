@@ -28,7 +28,7 @@ Credentials are provided in configuration.properties file
   ```
   mvn test
   ```
-  ```
+ 
  Go to "CukesRunner file and click on green arrow next to (public class CukesRunner)
   
 
