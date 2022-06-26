@@ -1,6 +1,5 @@
 package de.myToys.step_definition;
 
-import de.myToys.pages.DashboardPage;
 import de.myToys.pages.ShoppingPage;
 import de.myToys.utilities.BrowserUtils;
 import de.myToys.utilities.ConfigurationReader;
@@ -17,20 +16,19 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class ShoppingPageStepDef {
-    ShoppingPage shoppingPage = new ShoppingPage();
     WebDriverWait wait = new WebDriverWait(Driver.get(),10);
-    private DashboardPage dashboardPage;
+    private ShoppingPage shoppingPage ;
 
     //dependency injection with picoContainer
-    public ShoppingPageStepDef(DashboardPage dashboardPage) {
-        this.dashboardPage = dashboardPage;
+    public ShoppingPageStepDef(ShoppingPage shoppingPage) { this.shoppingPage = shoppingPage;
+        this.shoppingPage = shoppingPage;
     }
 
     @Given("the user is on the home page")
     public void the_user_is_on_the_home_page() {
         String url = System.getProperty("base.url") != null ? System.getProperty("base.url") : ConfigurationReader.get("myToys.url");
         Driver.get().get(url);
-        dashboardPage.cookies.click();
+        shoppingPage.cookies.click();
     }
 
     @When("the user writes {string}  on the search box")

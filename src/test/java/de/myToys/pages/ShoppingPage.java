@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.Select;
 import java.util.List;
 
 public class ShoppingPage extends BasePage {
+    @FindBy(xpath = "//button[normalize-space(text())='Zustimmen']")
+    public WebElement cookies;
 
     @FindBy(xpath = "//input[@placeholder='Suchbegriff']")
     public WebElement searchBar;
