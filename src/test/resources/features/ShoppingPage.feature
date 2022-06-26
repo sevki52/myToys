@@ -1,14 +1,11 @@
 Feature: Default
-  Background:
+  @shop
+  Scenario: User searches trampoline on myToys webpage
     Given the user is on the home page
     When the user writes "trampoline"  on the search box
     And the user clicks on search button
-@shop
-  Scenario: User searches trampoline on myToys webpage
     And the user sorts products by highest price
     Then Verify that the first 5 products have been sorted correctly
-@shop1
-  Scenario:User add products
     When the user clicks on Mehr Filter button
     And the user clicks on Preis button
     And the user writes costs between 500 and 1000

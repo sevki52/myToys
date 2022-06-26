@@ -279,23 +279,6 @@ public class BrowserUtils {
         ((JavascriptExecutor) Driver.get()).executeScript("arguments[0].removeAttribute('style', 'background: yellow; border: 2px solid red;');", element);
     }
 
-    /**
-     * Checks or unchecks given checkbox
-     *
-     * @param element
-     * @param check
-     */
-    public static void selectCheckBox(WebElement element, boolean check) {
-        if (check) {
-            if (!element.isSelected()) {
-                element.click();
-            }
-        } else {
-            if (element.isSelected()) {
-                element.click();
-            }
-        }
-    }
 
     /**
      * attempts to click on provided element until given time runs out

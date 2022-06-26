@@ -5,34 +5,24 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ConfigurationReader {
-
-    //#1- Create properties object
-    private static Properties properties = new Properties();
+    private static Properties properties;
 
     static {
 
         try {
-            //#2- Load the file into FileInputStream
-            FileInputStream file = new FileInputStream("configuration.properties");
-
-            //#3- load properties object with the file (configuration.properties)
-            properties.load(file);
-
-            //close the file
-            file.close();
-
-        } catch (IOException e) {
-
-            System.out.println("File not found in Configuration properties.");
+            String path = "Configuration.properties";
+            FileInputStream input = new FileInputStream(path);
+            properties = new Properties();
+            properties.load(input);
+            input.close();
+        } catch (Exception e) {
+            e.printStackTrace();
 
         }
-
     }
 
-    public static String get(String keyWord){
-
-        return properties.getProperty(keyWord);
+    public static String get(String keyName) {
+        return properties.getProperty(keyName);
     }
-
 
 }
