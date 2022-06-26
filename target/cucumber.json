@@ -1,1 +1,132 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3213437000,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "the user is on the home page",
+            "match": {
+              "location": "de.myToys.step_definition.HomePageStepDef.the_user_is_on_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 247054000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user writes \"trampoline\"  on the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"trampoline\"",
+                  "offset": 16
+                }
+              ],
+              "location": "de.myToys.step_definition.ShoppingPageStepDef.the_user_writes_on_the_search_box(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1495305000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user clicks on search button",
+            "match": {
+              "location": "de.myToys.step_definition.ShoppingPageStepDef.the_user_clicks_on_search_button()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-26T09:07:42.149Z",
+        "before": [
+          {
+            "result": {
+              "duration": 878000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "de.myToys.step_definition.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "User searches trampoline on myToys webpage",
+        "description": "",
+        "id": "default;user-searches-trampoline-on-mytoys-webpage",
+        "after": [
+          {
+            "result": {
+              "duration": 116628000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "de.myToys.step_definition.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1895530000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user sorts products by highest price",
+            "match": {
+              "location": "de.myToys.step_definition.ShoppingPageStepDef.theUserSortsProductsByHighestPrice()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 325215000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify that the first 5 products have been sorted correctly",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 22
+                }
+              ],
+              "location": "de.myToys.step_definition.ShoppingPageStepDef.verify_that_the_first_products_have_been_sorted_correctly(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@shop"
+          }
+        ]
+      }
+    ],
+    "name": "Default",
+    "description": "",
+    "id": "default",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/ShoppingPage.feature",
+    "tags": []
+  }
+]

@@ -1,4 +1,12 @@
+/Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/step_definition/Hooks.java
 /Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/utilities/Driver.java
+/Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/pages/BasePage.java
 /Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/utilities/BrowserUtils.java
+/Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/step_definition/HomePageStepDef.java
+/Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/step_definition/ShoppingPageStepDef.java
 /Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/runners/CukesRunner.java
+/Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/pages/ShoppingPage.java
+/Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/pages/DashboardPage.java
+/Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/utilities/DesiredCapabilities.java
+/Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/runners/FailedTestRunner.java
 /Users/aysunoksuz/IdeaProjects/myToys/src/test/java/de/myToys/utilities/ConfigurationReader.java

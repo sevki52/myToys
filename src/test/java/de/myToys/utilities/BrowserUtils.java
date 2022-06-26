@@ -13,7 +13,6 @@ import java.util.List;
 
 
 public class BrowserUtils {
-
     /**
      * Switches to new window by the exact title. Returns to original window if target title not found
      * @param targetTitle
@@ -376,6 +375,11 @@ public class BrowserUtils {
         new WebDriverWait(Driver.get(), time).until(ExpectedConditions.presenceOfElementLocated(by));
     }
 
+    public static WebElement ScrollToElement(){
+        int firstElement=Driver.get().findElements(By.cssSelector("ul[class='prod-grid js-prod-grid-search']")).size();
+        return Driver.get().findElements(By.cssSelector("a[class='prod-tile__link js-prodlink']")).get(firstElement);
+
+}
 
 
 }

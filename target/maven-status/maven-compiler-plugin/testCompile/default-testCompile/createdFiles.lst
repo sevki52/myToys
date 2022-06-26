@@ -1,5 +1,13 @@
-de/myToys/utilities/BrowserUtils$1.class
-de/myToys/utilities/BrowserUtils.class
+de/myToys/utilities/DesiredCapabilities.class
 de/myToys/utilities/Driver.class
+de/myToys/step_definition/Hooks.class
+de/myToys/runners/FailedTestRunner.class
+de/myToys/utilities/BrowserUtils.class
 de/myToys/runners/CukesRunner.class
 de/myToys/utilities/ConfigurationReader.class
+de/myToys/step_definition/ShoppingPageStepDef.class
+de/myToys/pages/BasePage.class
+de/myToys/pages/ShoppingPage.class
+de/myToys/pages/DashboardPage.class
+de/myToys/utilities/BrowserUtils$1.class
+de/myToys/step_definition/HomePageStepDef.class
